@@ -14,7 +14,6 @@ func main() {
 	
 	for index, each := range LastLines {
 		var _ = index
-        //fmt.Printf("Divine value [%d] is [%s]\n", index, each)
 		LastString := strings.Split(each, "]: ")[1]
 		LastArray := strings.Split(LastString, "|")
 		artist := LastArray[1]
