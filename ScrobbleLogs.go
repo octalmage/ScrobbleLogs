@@ -14,8 +14,7 @@ func main() {
 	
 	for index, each := range LastLines {
 		var _ = index
-		LastString := strings.Split(each, "]: ")[1]
-		LastArray := strings.Split(LastString, "|")
+		LastArray := strings.Split(each, "|")
 		artist := LastArray[1]
 		track := LastArray[2]
 		timestamp := LastArray[4]
